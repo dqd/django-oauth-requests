@@ -1,7 +1,7 @@
 # django-oauth-requests
 OAuth 2.0 authentication with [Django](https://www.djangoproject.com/) and [requests](https://requests.readthedocs.io/) made simple.
 
-This app for authenticating with remote APIs that use OAuth 2.0. It saves issued tokens to the database and automatically takes care of refreshing them before their expiration.
+This app for authenticating with remote APIs that use OAuth 2.0. It saves issued tokens to a database and automatically takes care of refreshing them after their expiration.
 
 # Installation
 Use a package manager to install it, for example using this command in your terminal:
@@ -18,7 +18,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-Then, add sample configuration for all the services you plan to use, like that:
+Then, add a configuration for all the services you plan to use, like this sample:
 
 ```python
 OAUTH_REQUESTS = {
@@ -30,7 +30,7 @@ OAUTH_REQUESTS = {
 }
 ```
 
-In this example, we only defined one service called `paypal`. We should put there issued `CLIENT_ID` and `CLIENT_SECRET` under their respective keys. And `url` should point to the authentication endpoint for issuing tokens.
+In this example, we only defined one service called `paypal`. We should put there issued `CLIENT_ID` and `CLIENT_SECRET` strings under their respective keys. And `url` should point to the authentication endpoint for issuing tokens.
 
 And finally, we should run Django migration to create tables for storing issued tokens. We can accomplish this by running the following command in our terminal:
 
