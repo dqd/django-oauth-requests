@@ -1,10 +1,10 @@
 [project]
 name = "django-oauth-requests"
-version = "1.0.0"
+version = "1.0.1"
 authors = [
   { name="Pavel Mises", email="id@dqd.cz" },
 ]
-description = "Package for OAuth 2.0 authentication with requests"
+description = "Django app for OAuth 2.0 authentication with requests"
 readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [

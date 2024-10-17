@@ -1,7 +1,7 @@
-# django-oauth-requests
+# [django-oauth-requests](https://pypi.org/project/django-oauth-requests/)
 OAuth 2.0 authentication with [Django](https://www.djangoproject.com/) and [requests](https://requests.readthedocs.io/) made simple.
 
-This app for authenticating with remote APIs that use OAuth 2.0. It saves issued tokens to a database and automatically takes care of refreshing them after their expiration.
+This app is for authenticating with remote APIs that use OAuth 2.0. It saves issued tokens to a database and automatically takes care of refreshing them after their expiration.
 
 # Installation
 Use a package manager to install it, for example using this command in your terminal:
